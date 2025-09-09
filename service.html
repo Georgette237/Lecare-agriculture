@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoolAgro - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+ <style>
+        .services-section {
+            padding: 60px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .services-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+        .service-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .service-card h3 {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .service-card p {
+          font-size: 15px;
+          color: #555;
+          margin-bottom: 10px;
+        }
+        .service-card a {
+           display: inline-block;
+           margin-top: 12px;
+           color: #2e7d32;
+           text-decoration: none;
+           font-size: 10px;
+           font-weight: bold;
+          }  
+       
+    </style>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+       <img src="images/logo2.png" alt=" error">Lecare Agriculture</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="service.html">Nos Activites</a></li>
+        <li><a href="article.html">Articles</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="text-align: right; padding: 10px;">
+     <select id="langue" onchange="changerLangue(this.value)">
+      <option value="fr">Français</option>
+     <option value="en">English</option>
+     </select>
+     </div>
+    <a class="btn-sign" href="#">Plan d’affaires</a>
+  </header>
+
+
+  <!-- Services -->  
+  <section class="services-section">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="images/img (14).jpg" alt="Conseil Agricole">
+            <h3>Conseil en production agricole</h3>
+            <p>Accompagnement technique et stratégique des exploitants agricoles.
+              Nous accompagnons les agriculteurs dans le choix des techniques culturales adaptes, la planification des cultures,
+               la rotation et l'optimisation des rendements en fonctions des realites locales
+            </p>
+             <a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (15).jpg" alt="Étude de sol">
+            <h3>Analyse et étude de sol</h3>
+            <p>Évaluation de la fertilité et recommandations pour une meilleure productivité.
+              Notre equipe efffectue un suiviregulier des culturs: detection des maladies, gestion de l'irrigation, l'intevention phytosanitaires, 
+              afin d'optimiser la sante et la productivitédes plantes
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (16).jpg" alt="Suivi des cultures">
+            <h3>Suivi des cultures</h3>
+            <p>Visites régulières des champs pour assurer la bonne croissance des cultures.
+
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (17).jpg" alt="Formation">
+            <h3>Formation & Renforcement de capacités</h3>
+            <p>Sessions de formation pratiques pour agriculteurs, jeunes et femmes rurales.
+              Nous proposons des sessions aux agriculteurset aux jeunes  entrepreneurs sur la bonnes pratiques agricole, 
+              la gestion durable et l'agriculture intellignete face au climat
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (18).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (19).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (20).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (21).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (22).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+        <div class="service-card">
+            <img src="images/img (23).jpg" alt="Intrants">
+            <h3>Vente d'intrants agricoles</h3>
+            <p>Distribution de semences, engrais, produits phytosanitaires certifiés.
+              nous mettons a la disponibilite des producteur des semences ameliorees, eengrais biologiques et conventionnels, 
+              produits phytosanitaires de qualite, adaptes a chaque culture et chaque environnement
+            </p><a href="suit-service.html">Plus en savoir</a>
+        </div>
+    </div>
+</section>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>LecareAgro</h3>
+      <p>Votre partenaire agro-intelligent</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p><a href="tel:+237693153391">📞 +237 693 15 33 91</a></p>
+      <p><a href="mailto:lecareinnovation@gmail.com">📧 lecareinnovation@gmail.com</a></p>
+      <p><a href="https://wa.me/237 673255069" target="_blank">💬 WhatsApp</a></p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Réseaux Sociaux</h4>
+      <p><a href="https://facebook.com/coolagro" target="_blank">🌐 Facebook</a></p>
+      <p><a href="#">📍 EDEA, Cameroun</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> LecareAgro. Tous droits réservés.
+  </div>
+</footer>
+
+  <script src="traduct.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
