@@ -13,6 +13,9 @@ function showSlides() {
 }
 
 function redirectToWhatsApp() {
+  
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche l'envoi par défaut du formulaire
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
@@ -35,6 +38,7 @@ function redirectToWhatsApp() {
   //const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
   //window.open(whatsappURL, "_blank");
 }
+
 
 
 
