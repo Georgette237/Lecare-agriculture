@@ -16,11 +16,13 @@ function redirectToWhatsApp() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
-  
-  const text = `Bonjour, je suis ${name} (${email}).\n\n${message}`;
-  const phoneNumber = "237 673255069"; // ← Remplace par le numéro WhatsApp de l’admin (avec indicatif pays)
 
+  const phoneNumber = "237673255069"; // ← Remplace par le numéro WhatsApp de l’admin (avec indicatif pays)
+  //construire un message a envoyer
+  const text = `Hello !!!, je suis ${name}.\n(${email}).\n\n${message}`;
+ 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
   window.open(whatsappURL, "_blank");
 }
+
 
