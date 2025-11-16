@@ -11,11 +11,10 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";  
   setTimeout(showSlides, 5000); // Change every 5 seconds
 }
-
-function redirectToWhatsApp() {
   
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Empêche l'envoi par défaut du formulaire
+    //recuperer les valeurs des champs
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
@@ -32,12 +31,9 @@ function redirectToWhatsApp() {
             
       // Ouvre WhatsApp avec le message pré-rempli
       window.open(whatsappURL, '_blank');
-  //construire un message a envoyer
- // const text = `Hello !!!, je suis ${name}.\n(${email}).\n\n${message}`;
- 
-  //const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-  //window.open(whatsappURL, "_blank");
-}
+  });
+
+
 
 
 
